@@ -1,0 +1,104 @@
+@use "../sass/base"as *;
+
+.section {
+
+    &__card{
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 4rem;
+        padding-right: 6rem;
+        padding-bottom: 6rem;
+
+
+        @include respond(lab) {
+            // padding-right: 0;
+        }
+    }
+
+    &__svg{
+        height: 4rem;
+        width: 6.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    &__para{
+        font-family: $display;
+        color: $color-para;
+        font-size: $font-default;
+        line-height: 1.7;
+
+        margin-bottom: 2.5rem;
+
+        @include respond(lab) {
+            margin-bottom: 7rem;
+        }
+
+    }
+
+    &__heading{
+        font-size: 3.4rem;
+        text-transform: uppercase;
+        color: $color-essential;
+        font-family: $deca;
+        
+        margin-bottom: 3rem;
+
+    }
+
+    &__btn {
+        padding: 1.2rem 2.4rem;
+        border-radius: 100px;
+        width: 50%;
+        border: 1px solid transparent;
+        background-color: $color-essential;
+
+        transition: background-color .4s;
+
+        @media (max-width:23.43em) {
+            width: 100%;
+            
+        }
+
+        @include respond(lab) {
+            padding: 1.1rem 3rem;
+            width: 100%;
+        }
+
+
+        &:hover {
+            cursor: pointer;
+            background-color: transparent;
+            color: $color-essential;
+            border: 1px solid $color-essential;
+        }
+
+
+    }
+}
+
+.card{
+    &--1{
+        background-color: $orange;
+        border-radius: 5px;
+    }
+    &--2{
+        background-color: $cyan;
+    }
+    &--3{
+        border-radius: 5px;
+        background-color: $cyan-dark;
+    }
+}
+
+.btn{
+
+    &--1{
+        color: $orange;
+    }
+    &--2{
+        color: $cyan;
+    }
+    &--3{
+        color: $cyan-dark;
+    }
+}

@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+.section {
+  background-color: hsl(0deg, 0%, 95%);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  max-width: 37.5rem;
+  width: 100%;
+}
+@media (min-width: 23.43em) {
+  .section {
+    margin: 0 auto;
+  }
+}
+@media (min-width: 64em) {
+  .section {
+    max-width: 102rem;
+    width: 100%;
+  }
+}
+.section__container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.5rem;
+}
+@media (min-width: 64em) {
+  .section__container {
+    display: flex;
+    width: 80%;
+  }
+}
+
+.section__card {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 4rem;
+  padding-right: 6rem;
+  padding-bottom: 6rem;
+}
+.section__svg {
+  height: 4rem;
+  width: 6.5rem;
+  margin-bottom: 2.5rem;
+}
+.section__para {
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0deg, 0%, 100%, 0.75);
+  font-size: 1.5rem;
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+}
+@media (min-width: 64em) {
+  .section__para {
+    margin-bottom: 7rem;
+  }
+}
+.section__heading {
+  font-size: 3.4rem;
+  text-transform: uppercase;
+  color: hsl(0deg, 0%, 95%);
+  font-family: "Big Shoulders Display", cursive;
+  margin-bottom: 3rem;
+}
+.section__btn {
+  padding: 1.2rem 2.4rem;
+  border-radius: 100px;
+  width: 50%;
+  border: 1px solid transparent;
+  background-color: hsl(0deg, 0%, 95%);
+  transition: background-color 0.4s;
+}
+@media (max-width: 23.43em) {
+  .section__btn {
+    width: 100%;
+  }
+}
+@media (min-width: 64em) {
+  .section__btn {
+    padding: 1.1rem 3rem;
+    width: 100%;
+  }
+}
+.section__btn:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: hsl(0deg, 0%, 95%);
+  border: 1px solid hsl(0deg, 0%, 95%);
+}
+
+.card--1 {
+  background-color: hsl(31deg, 77%, 52%);
+  border-radius: 5px;
+}
+.card--2 {
+  background-color: hsl(184deg, 100%, 22%);
+}
+.card--3 {
+  border-radius: 5px;
+  background-color: hsl(179deg, 100%, 13%);
+}
+
+.btn--1 {
+  color: hsl(31deg, 77%, 52%);
+}
+.btn--2 {
+  color: hsl(184deg, 100%, 22%);
+}
+.btn--3 {
+  color: hsl(179deg, 100%, 13%);
+}/*# sourceMappingURL=main.css.map */

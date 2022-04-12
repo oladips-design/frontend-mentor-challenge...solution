@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,*::after,*::before {
+    box-sizing: inherit;
+}
+
+$deca :  'Big Shoulders Display', cursive;
+$display: 'Lexend Deca',sans-serif;
+
+$orange: hsl(31, 77%, 52%);
+$cyan: hsl(184, 100%, 22%);
+$cyan-dark : hsl(179, 100%, 13%);
+
+$color-para: hsla(0, 0%, 100%, 0.75);
+$color-essential: hsl(0, 0%, 95%);
+
+$font-default: 1.5rem;
+
+img{
+    width: 100%;
+}
+
+
+@mixin respond($bp) {
+    @if  $bp == mobile {
+        @media (min-width:23.43em) {
+            @content
+        }
+    }
+    
+    @if  $bp == lab {
+        @media (min-width:64em) {
+            @content
+        }
+    }
+
+}
